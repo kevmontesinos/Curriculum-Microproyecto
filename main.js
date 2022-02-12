@@ -15,7 +15,7 @@ contactForm.addEventListener("submit", (event) => {
         alert("Debe completar todos los campos.");
         return;
     }
-    
+
     console.log(nombreValue);
     console.log(emailValue);
     console.log(mensajeValue);
@@ -37,12 +37,12 @@ window.addEventListener('load', () => {
 
     let indice = 0;
 
-    function cambiarImagen(){
+    function cambiarImagen() {
         console.log("pasa por aquí");
-        if (indice < 3){
+        if (indice < 3) {
             imagenHTML.src = imagenes[indice];
             indice++;
-        }else{
+        } else {
             indice = 0;
         }
     }
@@ -50,3 +50,43 @@ window.addEventListener('load', () => {
     setInterval(cambiarImagen, 2500);
 
 })
+
+const habilidadesOBJ = [
+    { "descripcion": "Trabajo en equipo", "nivel": 8 },
+    { "descripcion": "Manejo de lenguajes de programación", "nivel": 7 },
+    { "descripcion": "Bilingue", "nivel": 6 },
+    { "descripcion": "Habilidades matemáticas", "nivel": 7 },
+    { "descripcion": "Síntesis de información", "nivel": 9 }]
+
+
+
+const habilidadesJSON = JSON.stringify(habilidadesOBJ); // de obj a JSON
+
+const habilidades = JSON.parse(habilidadesJSON); // de JSON a obj xdd
+
+
+function imprimirCuadros(cantidad) {
+    return " ▉".repeat(cantidad * 2)
+}
+
+let infoCuadro = `
+    <tr>
+        <th class="titulo-tabla"><h4>Habilidad</h4></th>
+        <th class="titulo-tabla"><h4>Nivel</h4></th>
+    </tr>
+`
+for (let i = 0; i < habilidades.length; i++) {
+    infoCuadro += `<tr>
+        <th>${habilidades[i].descripcion}</th>
+        <th class="cuadros">${imprimirCuadros(habilidades[i].nivel)} </th>
+        </tr>
+            `
+}
+
+document.getElementById("habilidad-tabla").innerHTML += infoCuadro;
+
+
+
+
+
+
