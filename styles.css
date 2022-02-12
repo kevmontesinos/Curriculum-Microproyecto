@@ -47,8 +47,23 @@ body{
   max-height: 100%;
 }
 
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 20px;
+}
+
+h4{
+  font-size: 23px;
+}
+
 a {
   color:white
+}
+
+a:hover{
+  font-size: 19px;
 }
 
 nav{
@@ -83,7 +98,7 @@ h3{
 }
 
 .contenedor-secciones{
-  margin: 40px
+  margin: 40px;
 }
 
 p{
@@ -128,6 +143,7 @@ p{
 .texto-sobre-mi{
     width: 50%;
     margin: 20px;
+    text-align: justify;
 }
 .foto-sobre-mi{
     width: 30%;
@@ -157,7 +173,9 @@ th{
   color: black
 }
 
-
+span{
+  font-size: 15px;
+}
 .contacto-columna{
     display: flex;
     position: relative;
@@ -181,11 +199,14 @@ th{
 
 .grupo{
     display: block;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin: 60px;
     font-size: 10px;
     text-align: center;
 
+}
+
+.img-social-web{
+  margin: 10px;
 }
 
 
@@ -207,7 +228,21 @@ th{
     padding:5px 10px;
     color: white;
     text-align: center;
+    margin-left: 45%;
 }
+
+
+footer{
+  padding: 3vh;
+  background: var(--colorOne);  
+  text-align: center;
+  font-size: 10px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
 
 
 
