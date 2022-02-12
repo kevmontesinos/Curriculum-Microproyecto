@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+:root {
+  --colorOne: #514A9D;
+  --colorTwo: #24C6DC; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  font-family: Poppins, sans-serif;
+  color: white;
+  background: linear-gradient(90deg, var(--colorTwo) 0%, var(--colorOne) 100%);
+}
+
+.carrusel{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 94vh;
+}
+
+.wave-top{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 10%;
+}
+
+.texto-carrusel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-carrusel{
+  width: 100%;
+  filter: brightness(30%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color:white
+}
+
+nav{
+  text-align: center;
+}
+
+ul{
+  padding: 3vh;
+  background: var(--colorOne);  
+}
+li{
+  display: inline;
+  margin: 10px;
+  font-size: 20px;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+.foto{
+  border-radius: 5px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 20px 50px 20px 10px;
+  
+
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contenedor-secciones{
+  margin: 40px
+}
+
+p{
+  padding: 5px;
+}
+
+
+.proyectos{
+  display: flex;
+  position: relative;
+}
+
+.proyecto{
+  width: 33%;
+  padding: 3%;
+  margin: 3%;
+  text-align: center;
+}
+
+.img-proyecto{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  padding: 5px;
+}
+
+.img-proyecto:hover {
+  transform: scale(1.2); 
+  transition: transform 0.2s;
+}
+
+
+.sobre-mi{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.texto-sobre-mi{
+    width: 50%;
+    margin: 20px;
+}
+.foto-sobre-mi{
+    width: 30%;
+    margin: 20px;
+
+}
+
+.contacto-columna{
+    display: flex;
+    position: relative;
+}
+
+.contacto-form {
+  align-items:center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vh;
+  
+}
+
+.contacto-personal{
+    align-items:left;
+    width: 50%;
+    
+    margin: 3vh;   
+}
+
+
+.grupo{
+    display: block;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+
+.input-label{
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 1em;
+}
+
+.form-input{
+  min-height: 25px;
+}
+.mensaje{
+  height: 100px;
+}
+
+.enviar{
+    background-color: var(--colorOne);
+    padding:5px 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
