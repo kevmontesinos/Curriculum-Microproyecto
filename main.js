@@ -22,3 +22,31 @@ contactForm.addEventListener("submit", (event) => {
 
     alert("Su solicitud ha sido enviada.")
 });
+
+
+window.addEventListener('load', () => {
+
+    const imagenHTML = document.getElementById("carrusel");
+    let imagenes = [];
+
+
+    imagenes[0] = "./imagenes/img1.jpg"
+    imagenes[1] = "./imagenes/img2.jpg"
+    imagenes[2] = "./imagenes/img3.jpg"
+    imagenHTML.src = imagenes[0];
+
+    let indice = 0;
+
+    function cambiarImagen(){
+        console.log("pasa por aquí");
+        if (indice < 3){
+            imagenHTML.src = imagenes[indice];
+            indice++;
+        }else{
+            indice = 0;
+        }
+    }
+
+    setInterval(cambiarImagen, 2500);
+
+})
